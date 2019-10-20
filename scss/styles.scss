@@ -1,0 +1,210 @@
+//fonts 
+@import "fonts.scss";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Montserrat-regular";
+    color: #fff;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+//header
+.header {
+    position: relative;
+    overflow: hidden;
+    background: #505050;
+    .owl-prev {
+        position: absolute;
+        top: 325px;
+        left: 50px;
+        border: 0;
+    }
+    .owl-next {
+        position: absolute;
+        top: 360px;
+        right: 50px;
+        border: 0;
+    }
+    .owl-dots {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .owl-dot  {
+        margin: 5px;
+        width: 30px;
+        height: 7px;
+        border: 1px solid #61BDEF !important;
+        border-radius: 5px;
+    }
+    .owl-dot.active {
+        background: #61BDEF;
+    }
+}
+.header__content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+.logo__title {
+    font-weight: normal;
+    width: 224px;
+    font-size: 20px;
+    letter-spacing: 0.15em
+}
+.logo__item {
+    margin-left: -10px;
+}
+.logo__desc {
+    width: 224px;
+    letter-spacing: 0.55em;
+    font-size: 11px;
+}
+.menu__item {
+    display: inline;
+    margin-left: 15px;
+}
+.menu__link {
+    font-size: 14px;
+    letter-spacing: 0.05em;
+}
+.header__bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__phone-logo {
+    margin-bottom: -3.5px;
+}
+.phone {
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    font-size: 14px;
+}
+.header__button {
+    width: 247px;
+    height: 60px;
+    border: 2px solid #FF8A00;
+    color: #FF8A00;
+    background: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    font-weight: 500;
+    margin: 0 40px 0 30px;
+}
+.cart {
+    width: 56px;
+    height: 80px;
+    background: linear-gradient(91.64deg, #CE2326 0%, #BA1B1E 99.13%, #AD1A1B 99.14%);
+    border-radius: 0 0 5px 5px;
+    position: relative;
+}
+.cart__logo {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+//header--main  
+.header__main {
+    max-width: 1400px;
+    margin: 68px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.header__text {
+    margin-left: 270px;
+    z-index: 10;
+}
+.header__title {
+    font-weight: 300;
+    font-family: "BravoSC";
+    font-size: 70px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    &:nth-child(2) {
+        margin: 48px 0;
+    }
+    
+}
+.header__desc {
+    font-family: "BravoSCT";
+    font-weight: 300;
+    font-size: 30px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+.header__inf {
+    width: 490px;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    margin-bottom: 30px;
+}
+.order-button {
+    width: 285px;
+    height: 65px;
+    background: linear-gradient(100.18deg, #CE2326 0%, #BA1B1E 99.13%, #AD1A1B 99.14%);
+    border-radius: 5px;
+    border: 0;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-box-shadow: 5px 5px 2px 2px  #542d2d;
+    -moz-box-shadow: 5px 5px 2px 2px  #542d2d;
+    box-shadow: 5px 5px 2px 2px  #542d2d;
+    cursor: pointer;
+}
+.header__line {
+    z-index: 5;
+    position: absolute;
+    left: 0;
+    &:nth-child(1) {
+        margin-top: -50px;
+    }
+    margin-top: -85px; 
+}
+.header__img {
+    z-index: 10;
+    max-width: 557px;
+    position: relative;
+}
+.header__chair {
+    width: 100%;
+    z-index: 20;
+    position: relative;
+}
+.header__decoration {
+    z-index: 15;
+    position: absolute;
+    width: 1315px !important;
+    height: 807px;
+    left: -70%;
+    top: -10%;
+}
+.header__curve {
+    position: absolute;
+    @for $i from 1 through 9 {
+        &:nth-child(#{$i}) {
+          top: #{$i * 16}px;
+        }
+      }
+      
+}
